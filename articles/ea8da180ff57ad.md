@@ -63,14 +63,16 @@ user@ubuntu-server:~$ sudo nano /etc/netplan/01-netcfg.yaml
 ```bash
 # よくあるLinuxサーバーUbuntuでのイメージ
 network:
-  version: 2
-  ethernets:
-    eth0:
-      dhcp4: false
-      addresses:
-        - 192.168.1.10/24
-      gateway4: 192.168.1.1
+  version: 2              # ネットワーク設定の形式バージョン
+  ethernets:              # イーサネット（有線ネットワーク）の設定
+    eth0:                 # eth0 = ネットワークインターフェース名
+      dhcp4: false        # DHCPを無効化（固定IPを使用）
+      addresses:          # IPアドレスの設定
+        - 192.168.1.10/24 # 割り当てるIPアドレスとサブネットマスク
+      gateway4: 192.168.1.1  # デフォルトゲートウェイのIPアドレス
 ```
+この辺の設定ファイルについての記述はこちらにまとめてます。
+[Linuxのネットワーク設定ファイルを1行ずつ解剖してみる](https://zenn.dev/tanbokaeru/articles/d5ba9a1651cf4f.md)
 
 設定を書き換えたあと、以下のコマンドで反映します。
 ```bash
