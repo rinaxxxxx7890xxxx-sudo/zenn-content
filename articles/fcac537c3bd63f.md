@@ -3,7 +3,7 @@ title: "初学者向け-ドメイン名とIPアドレスを紐付ける（DNS設
 emoji: "🌐"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: [インフラ, ネットワーク, DNS, ドメイン]
-published: false
+published: true
 ---
 
 # はじめに
