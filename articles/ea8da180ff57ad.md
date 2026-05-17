@@ -3,7 +3,7 @@ title: "初学者向け-サーバーにIPアドレスを割り当てする"
 emoji: "🖥️"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: [インフラ, ネットワーク, Linux, サーバー]
-published: false
+published: true
 ---
 
 # はじめに
